@@ -5,7 +5,8 @@
  * file.
  */
 
-import User from 'App/Models/User'
+import { PrismaAuthProviderConfig, PrismaAuthProviderContract } from '@ioc:Adonis/Addons/Prisma'
+import { User } from '@prisma/client'
 
 declare module '@ioc:Adonis/Addons/Auth' {
   /*
@@ -34,8 +35,8 @@ declare module '@ioc:Adonis/Addons/Auth' {
     |
     */
     user: {
-      implementation: LucidProviderContract<typeof User>
-      config: LucidProviderConfig<typeof User>
+      implementation: PrismaAuthProviderContract<User>
+      config: PrismaAuthProviderConfig<User>
     }
   }
 

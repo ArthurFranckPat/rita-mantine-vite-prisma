@@ -5,3 +5,7 @@ coverage
 .DS_STORE
 .env
 tmp
+public/hot
+public/assets
+public/manifest.json
+docker-compose.yml

@@ -41,7 +41,7 @@ const authConfig: AuthConfig = {
         | Name of the driver
         |
         */
-        driver: 'lucid',
+        driver: 'prisma',
 
         /*
         |--------------------------------------------------------------------------
@@ -77,7 +77,8 @@ const authConfig: AuthConfig = {
         | that time.
         |
         */
-        model: () => import('App/Models/User'),
+        model: 'user',
+        hashDriver: 'argon',
       },
     },
   },

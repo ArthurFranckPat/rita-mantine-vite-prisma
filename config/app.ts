@@ -236,7 +236,7 @@ export const assets: AssetsManagerConfig = {
   | in the future
   |
   */
-  driver: 'encore',
+  driver: 'vite',
 
   /*
   |--------------------------------------------------------------------------

@@ -5,7 +5,8 @@
     "@adonisjs/core/build/commands/index.js",
     "@adonisjs/repl/build/commands",
     "@adonisjs/lucid/build/commands",
-    "adonis-sail/build/commands"
+    "adonis-sail/build/commands",
+    "@wahyubucil/adonis-prisma/build/commands"
   ],
   "exceptionHandlerNamespace": "App/Exceptions/Handler",
   "aliases": {
@@ -19,9 +20,7 @@
     "./start/kernel",
     {
       "file": "./start/inertia",
-      "environment": [
-        "web"
-      ]
+      "environment": ["web"]
     }
   ],
   "providers": [
@@ -33,7 +32,9 @@
     "@eidellev/inertia-adonisjs",
     "@adonisjs/lucid",
     "@adonisjs/auth",
-    "@adonisjs/ally"
+    "@adonisjs/ally",
+    "@wahyubucil/adonis-prisma",
+    "@91codes/adonis-vite"
   ],
   "metaFiles": [
     {
@@ -45,7 +46,5 @@
       "reloadServer": false
     }
   ],
-  "aceProviders": [
-    "@adonisjs/repl"
-  ]
+  "aceProviders": ["@adonisjs/repl"]
 }

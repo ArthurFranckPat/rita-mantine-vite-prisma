@@ -7,6 +7,7 @@ export interface IUser {
   admin: boolean
   created_at: string
   updated_at: string
+  image?: string
 }
 
 export interface IPageProps extends Page<PageProps> {
@@ -14,5 +15,6 @@ export interface IPageProps extends Page<PageProps> {
     errors: Errors & ErrorBag
     authenticated: boolean
     user: IUser | null
+    flashMessages: any
   }
 }

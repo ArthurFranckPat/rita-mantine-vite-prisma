@@ -34,7 +34,8 @@
       "@eidellev/inertia-adonisjs",
       "@adonisjs/lucid",
       "@adonisjs/auth",
-      "@adonisjs/ally"
+      "@adonisjs/ally",
+      "@wahyubucil/adonis-prisma"
     ]
   }
 }
